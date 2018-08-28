@@ -1,5 +1,5 @@
 ﻿<catelControls:Page
-    x:Class="CatelTest.Uwp.Ui.Views.CatelFodyView"
+    x:Class="CatelTest.Uwp.Ui.Views.PersonView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:CatelTest.Uwp.Ui.Views"

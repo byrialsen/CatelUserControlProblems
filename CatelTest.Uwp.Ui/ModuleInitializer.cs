@@ -25,8 +25,8 @@ namespace CatelTest.Uwp.Ui
             viewModelLocator.ClearCache();
             viewModelLocator.NamingConventions.Clear();
 
-            viewLocator.Register(typeof(PersonViewModel), typeof(CatelFodyView));
-            viewModelLocator.Register(typeof(CatelFodyView), typeof(PersonViewModel));
+            viewLocator.Register(typeof(PersonViewModel), typeof(PersonView));
+            viewModelLocator.Register(typeof(PersonView), typeof(PersonViewModel));
         }
     }
 }
