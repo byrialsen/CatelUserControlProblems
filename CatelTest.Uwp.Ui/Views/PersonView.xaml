@@ -14,7 +14,6 @@
             <TextBox x:Name="TextBoxFirstName" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="Firstname" />
             <TextBox x:Name="TextBoxSurnames" Text="{Binding Surnames, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="Surnames" />
             <CheckBox IsChecked="{x:Bind VM.IsChecked, Mode=TwoWay}" />
-            <Button x:Name="ButtonForceUpdate" Content="Force update" Command="{Binding ForceUpdateCommand}" />
         </StackPanel>
         <TextBlock x:Name="TextBoxFullname" Text="{x:Bind VM.Fullname, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" />
     </Grid>

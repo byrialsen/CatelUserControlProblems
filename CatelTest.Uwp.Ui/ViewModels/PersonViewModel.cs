@@ -5,8 +5,6 @@ namespace CatelTest.Uwp.Ui.ViewModels
 {
     public class PersonViewModel : ViewModelBase
     {
-        public Command ForceUpdateCommand { get; set; }
-
         [Model]
         public Person Person { get; set; }
 
@@ -30,11 +28,6 @@ namespace CatelTest.Uwp.Ui.ViewModels
         public PersonViewModel()
         {
             Person = new Models.Person() { FirstName = "Paw", Surnames = "Hauge Byrialsen", Age = 45, IsChecked = false };
-
-            ForceUpdateCommand = new Command(() =>
-            {
-                RaisePropertyChanged(nameof(Fullname));
-            });
         }
     }
 }
