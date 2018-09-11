@@ -16,6 +16,7 @@ namespace CatelTest.Uwp.Ui.ViewModels
         [ViewModelToModel]
         public string Surnames { get; set; }
 
+        [ViewModelToModel]
         public bool IsChecked { get; set; }
 
         /// <summary>
@@ -28,8 +29,7 @@ namespace CatelTest.Uwp.Ui.ViewModels
 
         public PersonViewModel()
         {
-            Person = new Models.Person() { FirstName = "Paw", Surnames = "Hauge Byrialsen", Age = 45 };
-            IsChecked = true;
+            Person = new Models.Person() { FirstName = "Paw", Surnames = "Hauge Byrialsen", Age = 45, IsChecked = false };
 
             ForceUpdateCommand = new Command(() =>
             {
