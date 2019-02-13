@@ -1,5 +1,6 @@
 ﻿using Catel.IoC;
 using Catel.MVVM;
+using CatelTest.Uwp.Ui.Controls;
 using CatelTest.Uwp.Ui.ViewModels;
 using CatelTest.Uwp.Ui.Views;
 
@@ -25,8 +26,11 @@ namespace CatelTest.Uwp.Ui
             viewModelLocator.ClearCache();
             viewModelLocator.NamingConventions.Clear();
 
-            viewLocator.Register(typeof(PersonViewModel), typeof(PersonView));
-            viewModelLocator.Register(typeof(PersonView), typeof(PersonViewModel));
+            viewLocator.Register(typeof(MainViewModel), typeof(MainView));
+            viewModelLocator.Register(typeof(MainView), typeof(MainViewModel));
+
+            viewLocator.Register(typeof(PersonControlViewModel), typeof(PersonControl));
+            viewModelLocator.Register(typeof(PersonControl), typeof(PersonControlViewModel));
         }
     }
 }
